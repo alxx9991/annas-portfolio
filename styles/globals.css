@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "GeneralSans";
+  src: url("../fonts/GeneralSans-Regular.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GeneralSans";
+  src: url("../fonts/GeneralSans-Medium.otf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GeneralSans";
+  src: url("../fonts/GeneralSans-Semibold.otf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@layer base {
+  html {
+    @apply font-general;
+    @apply bg-bg;
+    @apply text-[#333333];
+    @apply text-[14px] md:text-[15px] xl:text-[16px];
+    font-weight: 400;
+    min-height: 100%;
+  }
+
+  body {
+    height: 100%;
+  }
+
+  h1 {
+    @apply text-h1;
+  }
+}
+
+@layer components {
+  .full-width-section {
+    @apply grid col-sm md:col-md xl:col-xl grid-rows-max-content grid-cols-sm md:grid-cols-md xl:grid-cols-xl 2xl:grid-cols-2xl gap-x-8 gap-y-0 md:text-left md:min-h-[0];
+  }
+
+  .full-grid {
+    @apply grid grid-rows-max-content grid-cols-sm md:grid-cols-md xl:grid-cols-xl gap-x-8 gap-y-0 px-[8%] md:px-0 pb-24;
+  }
+
+  .background {
+    @apply absolute h-full w-full -z-10 inset-0;
+  }
+}
