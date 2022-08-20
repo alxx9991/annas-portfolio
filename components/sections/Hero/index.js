@@ -8,7 +8,7 @@ const Hero = () => {
     <div className="full-width-section mt-48 text-center">
       <Row ss={1} es={7} sm={1} em={11} el={1} sl={15}>
         <h1 className="text-text-light-grey">
-          Hello, I'm <span className={highlight}>Anna He</span>
+          Hello, I{"'"}m <span className={highlight}>Anna He</span>
           <br />a <span className={highlight}>product designer</span>
         </h1>
       </Row>
