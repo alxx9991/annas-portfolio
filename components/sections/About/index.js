@@ -13,7 +13,7 @@ const About = () => {
           <div className="flex flex-col md:flex-row justify-between">
             <div className="flex flex-col  w-[50%]">
               <div className="flex flex-col">
-                <h3 className="text-subtitle-unspaced">I'm Anna</h3>
+                <h3 className="text-subtitle-unspaced">I{"'"}m Anna</h3>
                 <p>
                   a Sydney based designer currently enjoying the challenges of
                   problem solving and strategising ways to empower people
