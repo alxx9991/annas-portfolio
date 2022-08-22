@@ -1,11 +1,13 @@
 import Row from "../../layout/Row";
+import Carousel from "./Carousel";
+import MobileCarousel from "../../../assets/mobileCarousel.svg";
 
 const Hero = () => {
   const highlight =
-    "text-dark-grey relative inline-block after:block after:h-10 after:w-[103%] after:bg-primary after:bg-opacity-25 after:absolute after:inset-x-[-1.5%] after:inset-y-[75%] after:rounded-full after:-z-10";
+    "text-dark-grey relative inline-block after:block after:h-[30%] after:w-[103%] after:bg-primary after:bg-opacity-25 after:absolute after:inset-x-[-1.5%] after:inset-y-[75%] after:rounded-full after:-z-10";
 
   return (
-    <div className="full-width-section mt-48 text-center">
+    <div className="full-width-section mt-44 text-center">
       <Row ss={1} es={7} sm={1} em={11} el={1} sl={15}>
         <h1 className="text-text-light-grey">
           Hello, I{"'"}m <span className={highlight}>Anna He</span>
@@ -16,6 +18,28 @@ const Hero = () => {
         <p className="text-text-dark-grey text-subtitle mt-8">
           A listener first, designer after
         </p>
+      </Row>
+      <Row
+        ss={1}
+        es={7}
+        sm={1}
+        em={11}
+        el={1}
+        sl={15}
+        className="hidden md:flex"
+      >
+        <Carousel></Carousel>
+      </Row>
+      <Row
+        ss={1}
+        es={7}
+        sm={1}
+        em={11}
+        el={1}
+        sl={15}
+        className="md:hidden flex justify-center items-center mt-36"
+      >
+        <MobileCarousel></MobileCarousel>
       </Row>
     </div>
   );

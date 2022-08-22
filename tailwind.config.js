@@ -16,8 +16,19 @@ module.exports = {
       h2: ["5.063rem", { lineHeight: "120%", fontWeight: 400 }],
       h3: ["3.375rem", { lineHeight: "120%", fontWeight: 500 }],
       subtitle: [
-        "2.25rem",
-        { lineHeight: "120%", fontWeight: 500, letterSpacing: 4 },
+        "clamp(1rem, 4vw, 2.25rem)",
+        {
+          lineHeight: "120%",
+          fontWeight: 500,
+          letterSpacing: "clamp(2px, 0.5vw, 4px)",
+        },
+      ],
+      "subtitle-unspaced": [
+        "clamp(1rem, 4vw, 2.25rem)",
+        {
+          lineHeight: "120%",
+          fontWeight: 500,
+        },
       ],
       b1: ["1.25rem", { lineHeight: "150%" }],
       b2: ["1rem", { lineHeight: "150%" }],
