@@ -12,7 +12,7 @@ const Carousel = () => {
 
   const CarouselItems = images.map((image) => {
     return (
-      <div className="mx-4">
+      <div key={uuidv4()} className="mx-4">
         <Image src={image}></Image>
       </div>
     );
