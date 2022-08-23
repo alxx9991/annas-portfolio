@@ -7,7 +7,7 @@ const Hero = () => {
     "text-dark-grey relative inline-block after:block after:h-[30%] after:w-[103%] after:bg-primary after:bg-opacity-25 after:absolute after:inset-x-[-1.5%] after:inset-y-[75%] after:rounded-full after:-z-10";
 
   return (
-    <div className="full-width-section mt-44 text-center">
+    <div className="full-width-section mt-36 text-center">
       <Row ss={1} es={7} sm={1} em={11} el={1} sl={15}>
         <h1 className="text-text-light-grey">
           Hello, I{"'"}m <span className={highlight}>Anna He</span>
@@ -26,9 +26,11 @@ const Hero = () => {
         em={11}
         el={1}
         sl={15}
-        className="hidden md:flex"
+        className="hidden mt-36 md:flex justify-center items-center"
       >
-        <Carousel></Carousel>
+        <div className="w-full max-w-[1440px]">
+          <Carousel></Carousel>
+        </div>
       </Row>
       <Row
         ss={1}

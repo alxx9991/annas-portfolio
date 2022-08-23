@@ -12,15 +12,15 @@ const Carousel = () => {
 
   const CarouselItems = images.map((image) => {
     return (
-      <div key={uuidv4()} className="block h-[20%] w-[20%]">
-        <Image src={image} layout="responsive"></Image>
+      <div className="mx-4">
+        <Image src={image}></Image>
       </div>
     );
   });
 
   return (
     <Marquee speed={30} gradientColor={[248, 248, 248]} gradientWidth={100}>
-      <div className="flex justify-around mt-48 w-full">{CarouselItems}</div>
+      <div className="flex justify-around w-full">{CarouselItems}</div>
     </Marquee>
   );
 };

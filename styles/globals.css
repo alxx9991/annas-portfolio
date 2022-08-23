@@ -40,11 +40,15 @@
   h1 {
     @apply text-h1;
   }
+
+  .subtitle2 {
+    @apply text-subtitle3 lg:text-subtitle2;
+  }
 }
 
 @layer components {
   .full-width-section {
-    @apply grid col-sm md:col-md xl:col-xl grid-rows-max-content grid-cols-sm md:grid-cols-md xl:grid-cols-xl 2xl:grid-cols-2xl gap-x-8 gap-y-0 md:text-left md:min-h-[0];
+    @apply grid col-sm md:col-md xl:col-xl grid-rows-max-content grid-cols-sm md:grid-cols-md xl:grid-cols-xl gap-x-8 gap-y-0 md:text-left md:min-h-[0];
   }
 
   .full-grid {
@@ -56,6 +60,6 @@
   }
 
   .content-box {
-    @apply rounded-3xl bg-white p-4 md:p-6 lg:p-8 xl:p-12;
+    @apply rounded-3xl bg-white px-8 py-12 md:p-12;
   }
 }
