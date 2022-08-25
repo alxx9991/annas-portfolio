@@ -41,8 +41,32 @@
     @apply text-h1;
   }
 
+  h2 {
+    @apply text-h2;
+  }
+
+  .subtitle {
+    @apply text-subtitle;
+  }
+
   .subtitle2 {
-    @apply text-subtitle3 lg:text-subtitle2;
+    @apply text-subtitle2;
+  }
+
+  .subtitle3 {
+    @apply text-subtitle3;
+  }
+
+  .btn {
+    @apply text-btn;
+  }
+
+  .b1 {
+    @apply text-b1;
+  }
+
+  .b2 {
+    @apply text-b2;
   }
 }
 
@@ -52,7 +76,7 @@
   }
 
   .full-grid {
-    @apply grid grid-rows-max-content grid-cols-sm md:grid-cols-md xl:grid-cols-xl gap-x-8 gap-y-0 px-[8%] md:px-0 pb-24;
+    @apply grid grid-rows-max-content grid-cols-sm md:grid-cols-md xl:grid-cols-xl gap-x-8 gap-y-0 px-[8%] md:px-0 pb-0;
   }
 
   .background {

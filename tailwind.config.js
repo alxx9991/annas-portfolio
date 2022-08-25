@@ -11,35 +11,37 @@ module.exports = {
     fontSize: {
       h1: [
         "clamp(2.25rem, 9.8vw, 5.063rem)",
-        { lineHeight: "110%", fontWeight: 400 },
+        { lineHeight: "120%", fontWeight: 400 },
       ],
-      h2: ["5.063rem", { lineHeight: "120%", fontWeight: 400 }],
-      h3: ["3.375rem", { lineHeight: "120%", fontWeight: 500 }],
+      h2: ["3.375rem", { lineHeight: "120%", fontWeight: 500 }],
       subtitle: [
-        "1.5rem",
+        "2.25rem",
         {
-          lineHeight: "120%",
+          lineHeight: "140%",
           fontWeight: 500,
-          letterSpacing: "clamp(2px, 0.5vw, 3px)",
         },
       ],
       subtitle2: [
-        "2.25rem",
+        "1.75rem",
         {
-          lineHeight: "120%",
-          fontWeight: 400,
+          lineHeight: "140%",
+          fontWeight: 500,
         },
       ],
       subtitle3: [
-        "1.5rem",
+        "1.375rem",
         {
           lineHeight: "120%",
           fontWeight: 400,
+          letterSpacing: "0.1875rem",
         },
       ],
-      b1: ["1.25rem", { lineHeight: "150%" }],
-      b2: ["1rem", { lineHeight: "150%" }],
-      btn: ["1rem", { lineHeight: "110%", fontWeight: 500 }],
+      b1: ["1.125rem", { lineHeight: "200%" }],
+      b2: ["1rem", { lineHeight: "120%" }],
+      btn: [
+        "1rem",
+        { lineHeight: "140%", fontWeight: 500, letterSpacing: "0.0625rem" },
+      ],
     },
     colors: {
       primary: "#AFBCFF",

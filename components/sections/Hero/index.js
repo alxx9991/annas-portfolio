@@ -15,9 +15,7 @@ const Hero = () => {
         </h1>
       </Row>
       <Row ss={1} es={7} sm={1} em={11} el={1} sl={15}>
-        <p className="text-text-dark-grey text-subtitle mt-8">
-          A listener first, designer after
-        </p>
+        <p className="subtitle3 mt-8">A listener first, designer after</p>
       </Row>
       <Row
         ss={1}

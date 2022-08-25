@@ -1,5 +1,5 @@
 import Layout from "../components/layout";
-import { Hero, About } from "../components/sections";
+import { Hero, About, Projects } from "../components/sections";
 
 const HomePage = () => {
   return (
@@ -7,6 +7,7 @@ const HomePage = () => {
       <Layout>
         <Hero></Hero>
         <About></About>
+        <Projects></Projects>
       </Layout>
     </>
   );

@@ -118,7 +118,18 @@ const emlConfig = {
   15: "lg:col-end-[15]",
 };
 
-const Row = ({ ss, es, sm, em, sl, el, sml, eml, children, className }) => {
+const Row = ({
+  ss = 1,
+  es = 7,
+  sm = 1,
+  em = 11,
+  sl = 1,
+  el = 15,
+  sml,
+  eml,
+  children,
+  className,
+}) => {
   const classes = `row-auto ${ssConfig[ss]} ${esConfig[es]} ${smConfig[sm]} ${
     emConfig[em]
   } ${sml ? smlConfig[sml] : slConfig[sl]} ${
