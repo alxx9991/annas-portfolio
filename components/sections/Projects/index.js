@@ -36,7 +36,9 @@ const Projects = () => {
           Recent Projects
         </h2>
       </Row>
-      <Row className="flex flex-row gap-16 justify-center">{projects}</Row>
+      <Row className="flex flex-col items-center xl:items-start xl:flex-row gap-32 xl:gap-16 justify-center mb-24">
+        {projects}
+      </Row>
     </div>
   );
 };

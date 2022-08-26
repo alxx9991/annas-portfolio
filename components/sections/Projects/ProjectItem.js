@@ -3,7 +3,10 @@ import { v4 as uuidv4 } from "uuid";
 const ProjectItem = ({ name, subtitle, description, image, skills }) => {
   const skillElements = skills.map((skill) => {
     return (
-      <div key={uuidv4} className="b2 bg-grey rounded-full px-10 py-4">
+      <div
+        key={uuidv4}
+        className="b2 bg-grey rounded-full px-6 py-2 lg:px-10 lg:py-4"
+      >
         {skill}
       </div>
     );

@@ -4,7 +4,7 @@ import LinkedIn from "../../../assets/linkedin.svg";
 
 const Footer = () => {
   return (
-    <div className="full-width-section flex flex-col bg-[black] text-white items-center mt-48 pt-12">
+    <div className="full-width-section flex flex-col bg-[black] text-white items-center mt-48 pt-12 mx-[-3rem] md:m-0">
       <h2>Collab or chat?</h2>
       <h2 className="font-normal">Let{"'"}s connect</h2>
       <div className="flex flex-row gap-12 my-16 items-end">
