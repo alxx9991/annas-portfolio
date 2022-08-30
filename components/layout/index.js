@@ -1,13 +1,42 @@
 import Header from "../sections/Header";
 import Footer from "../sections/Footer";
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 const Layout = ({ children }) => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => setIsLoading(false), 2000);
+  }, []);
+
   return (
-    <div className="full-grid" id="home">
-      <Header></Header>
-      {children}
-      <Footer></Footer>
-    </div>
+    <>
+      {isLoading ? (
+        <div className="fixed w-screen h-screen bg-white z-20 flex items-center justify-center">
+          <motion.h2
+            animate={{
+              opacity: [0.5, 1, 0],
+            }}
+            transition={{ duration: 2 }}
+          >
+            Loading...
+          </motion.h2>
+        </div>
+      ) : (
+        <motion.div
+          className="full-grid"
+          id="home"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          <Header></Header>
+          {children}
+          <Footer></Footer>
+        </motion.div>
+      )}
+    </>
   );
 };
 
