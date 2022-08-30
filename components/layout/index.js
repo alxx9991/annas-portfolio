@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
         <div className="fixed w-screen h-screen bg-white z-20 flex items-center justify-center">
           <motion.h2
             animate={{
-              opacity: [0.5, 1, 0],
+              opacity: [0, 1, 0],
             }}
             transition={{ duration: 2 }}
           >
