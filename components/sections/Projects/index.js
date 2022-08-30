@@ -30,7 +30,7 @@ const Projects = () => {
   });
 
   return (
-    <div className="full-width-section mt-48">
+    <div className="full-width-section mt-48" id="projects">
       <Row>
         <h2 className="text-center text-text-dark-grey mb-16">
           Recent Projects

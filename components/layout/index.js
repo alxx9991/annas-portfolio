@@ -3,7 +3,7 @@ import Footer from "../sections/Footer";
 
 const Layout = ({ children }) => {
   return (
-    <div className="full-grid">
+    <div className="full-grid" id="home">
       <Header></Header>
       {children}
       <Footer></Footer>

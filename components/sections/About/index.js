@@ -2,11 +2,10 @@ import Row from "../../layout/Row";
 
 import Image from "next/image";
 import uiStaticTags from "../../../assets/uiTagsStatic.png";
-import Teacup from "../../../assets/teacup.svg";
 
 const About = () => {
   return (
-    <div className="full-width-section mt-48">
+    <div className="full-width-section mt-48" id="about">
       <Row ss={1} es={7} sm={2} em={10} sl={3} el={13} className="content-box">
         <div className="flex flex-col">
           <h2 className="text-center text-text-dark-grey mb-16">
@@ -26,7 +25,7 @@ const About = () => {
                 <div className="flex items-center gap-4">
                   <h3 className="subtitle2">Outside of design 🍵</h3>
                 </div>
-                <p className="b1">
+                <p className="b1" id="hi">
                   you will usually find me at the gym, reading on psychology or
                   making an iced matcha espresso.
                 </p>

@@ -10,7 +10,7 @@ module.exports = {
     },
     fontSize: {
       h1: [
-        "clamp(2.25rem, 9.8vw, 5.063rem)",
+        "clamp(2.25rem, 9.5vw, 5.063rem)",
         { lineHeight: "120%", fontWeight: 400 },
       ],
       h2: ["3.375rem", { lineHeight: "120%", fontWeight: 500 }],

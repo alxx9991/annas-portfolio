@@ -1,6 +1,7 @@
 import Row from "../../layout/Row";
 import Carousel from "./Carousel";
-import MobileCarousel from "../../../assets/mobileCarousel.svg";
+import MobileCarousel from "../../../assets/carouselMobile.png";
+import Image from "next/image";
 
 const Hero = () => {
   const highlight =
@@ -39,7 +40,7 @@ const Hero = () => {
         sl={15}
         className="md:hidden flex justify-center items-center mt-36"
       >
-        <MobileCarousel></MobileCarousel>
+        <Image src={MobileCarousel}></Image>
       </Row>
     </div>
   );

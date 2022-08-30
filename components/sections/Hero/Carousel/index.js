@@ -1,17 +1,18 @@
-import Carousel1 from "../../../../assets/carousel1.svg";
-import Carousel2 from "../../../../assets/carousel2.svg";
-import Carousel3 from "../../../../assets/carousel3.svg";
-import Carousel4 from "../../../../assets/carousel4.svg";
+import Carousel1 from "../../../../assets/carousel1.png";
+import Carousel2 from "../../../../assets/carousel2.png";
+import Carousel3 from "../../../../assets/carousel3.png";
+import Carousel4 from "../../../../assets/carousel4.png";
 import Marquee from "react-fast-marquee";
+import Image from "next/image";
 
 import { v4 as uuidv4 } from "uuid";
 
 const Carousel = () => {
   const images = [
-    <Carousel1 key={uuidv4()} />,
-    <Carousel2 key={uuidv4()} />,
-    <Carousel3 key={uuidv4()} />,
-    <Carousel4 key={uuidv4()} />,
+    <Image src={Carousel1} key={uuidv4()} />,
+    <Image src={Carousel2} key={uuidv4()} />,
+    <Image src={Carousel3} key={uuidv4()} />,
+    <Image src={Carousel4} key={uuidv4()} />,
   ];
 
   const CarouselItems = images.map((image) => {
