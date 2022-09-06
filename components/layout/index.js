@@ -26,17 +26,11 @@ const Layout = ({ children }) => {
           </motion.h2>
         </div>
       ) : (
-        <motion.div
-          className="full-grid"
-          id="home"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
-        >
+        <div className="full-grid" id="home">
           <Header></Header>
           {children}
           <Footer></Footer>
-        </motion.div>
+        </div>
       )}
     </>
   );

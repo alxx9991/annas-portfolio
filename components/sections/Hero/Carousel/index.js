@@ -24,7 +24,7 @@ const Carousel = () => {
   });
 
   return (
-    <Marquee speed={20} gradientColor={[248, 248, 248]} gradientWidth={100}>
+    <Marquee speed={20} gradientColor={[248, 248, 248]} gradientWidth={0}>
       <div className="flex justify-around w-full">{CarouselItems}</div>
     </Marquee>
   );

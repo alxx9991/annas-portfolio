@@ -4,6 +4,7 @@ import Image from "next/image";
 import iwl from "../../../assets/iwl.png";
 import alexPortfolio from "../../../assets/alex-portfolio.png";
 import { v4 as uuidv4 } from "uuid";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   const projectInfo = [
@@ -32,7 +33,12 @@ const Projects = () => {
   return (
     <div className="full-width-section mt-48" id="projects">
       <Row>
-        <h2 className="text-center text-text-dark-grey mb-16">
+        <h2
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, amount: 0.2 }}
+          className="text-center text-text-dark-grey mb-16"
+        >
           Recent Projects
         </h2>
       </Row>
