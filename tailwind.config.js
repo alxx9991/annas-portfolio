@@ -62,7 +62,9 @@ module.exports = {
       gridTemplateColumns: {
         sm: "2rem repeat(4, 1fr) 2rem",
         md: "3rem repeat(8, 1fr) 3rem",
-        xl: "calc((100% - 1152px) / 2) repeat(12,1fr) calc((100% - 1152px) / 2)",
+        xl: "calc((100% - 1000px) / 2) repeat(12,1fr) calc((100% - 1000px) / 2)",
+        "2xl":
+          "calc((100% - 1152px) / 2) repeat(12,1fr) calc((100% - 1152px) / 2)",
       },
       gridTemplateRows: {
         "max-content": "max-content",
