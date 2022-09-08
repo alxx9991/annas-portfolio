@@ -4,7 +4,6 @@ import Image from "next/image";
 import iwl from "../../../assets/iwl.png";
 import alexPortfolio from "../../../assets/alex-portfolio.png";
 import { v4 as uuidv4 } from "uuid";
-import { motion } from "framer-motion";
 
 const Projects = () => {
   const projectInfo = [
@@ -14,7 +13,8 @@ const Projects = () => {
       subtitle: "Dashboard Redesign",
       skills: ["UX/UI", "Health", "Web App"],
       description:
-        "Australia’s only scentifically developed weight-loss and wellbeing program proven to deliver sustainable, lasting results.",
+        "Redesigning the interface for Australia’s only scentifically developed weight-loss program.",
+      bg: "bg-[#D7E7E7]",
     },
     {
       image: <Image src={alexPortfolio}></Image>,
@@ -22,7 +22,8 @@ const Projects = () => {
       subtitle: "Portfolio Website",
       skills: ["UX/UI", "Branding"],
       description:
-        "Portfolio web design and branding for a frontend software developer.",
+        "Website design and branding for a frontend software developer.",
+      bg: "bg-[#BAC1D3]",
     },
   ];
 
@@ -30,16 +31,14 @@ const Projects = () => {
     return <ProjectItem key={uuidv4()} {...project}></ProjectItem>;
   });
 
+  const highlight =
+    "text-dark-grey relative inline-block after:block after:h-[30%] after:w-[106%] after:bg-primary after:bg-opacity-25 after:absolute after:inset-x-[-3%] after:inset-y-[75%] after:rounded-full after:-z-10";
+
   return (
     <div className="full-width-section mt-48" id="projects">
       <Row>
-        <h2
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true, amount: 0.2 }}
-          className="text-center text-text-dark-grey mb-16"
-        >
-          Recent Projects
+        <h2 className="text-center text-text-dark-grey mb-16">
+          <span className={highlight}>Recent Projects</span>
         </h2>
       </Row>
       <Row className="flex flex-col items-center xl:items-start xl:flex-row gap-32 xl:gap-16 justify-center mb-24">

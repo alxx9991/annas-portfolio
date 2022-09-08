@@ -12,7 +12,7 @@ const Hero = () => {
     "text-dark-grey relative inline-block after:block after:h-[30%] after:w-[112%] after:bg-primary after:bg-opacity-25 after:absolute after:inset-x-[-6%] after:inset-y-[75%] after:rounded-full after:-z-10";
 
   return (
-    <div className="full-width-section mt-12 text-center">
+    <div className="full-width-section mt-12 2xl:mt-20 text-center">
       <Row ss={1} es={7} sm={1} em={11} el={1} sl={15}>
         <motion.h1
           initial={{ opacity: 0 }}
