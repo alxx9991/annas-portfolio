@@ -16,7 +16,7 @@ const About = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.2, duration: 0.5 }}
-      className="full-width-section mt-48"
+      className="full-width-section mt-24"
       id="about"
     >
       <Row>
@@ -27,11 +27,11 @@ const About = () => {
       <Row
         sl={2}
         el={14}
-        className="content-box md:px-20 py-24 rounded-[2rem] bg-grey text-dark-grey"
+        className="content-box md:px-20 py-16 rounded-[2rem] bg-grey text-dark-grey"
       >
-        <div className="flex flex-col items-start gap-8 md:flex-row justify-between">
-          <div className="flex flex-col gap-16">
-            <div className="flex flex-col gap-4">
+        <div className="flex flex-col items-center gap-8 md:flex-row justify-between">
+          <div className="flex flex-col gap-8">
+            <div className="flex flex-col gap-1">
               <motion.h3
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -39,7 +39,7 @@ const About = () => {
                 transition={{ duration: 0.5 }}
                 className="subtitle2"
               >
-                I{"'"}m Anna
+                A listener first, designer after
               </motion.h3>
               <motion.p
                 initial={{ opacity: 0 }}
@@ -48,12 +48,13 @@ const About = () => {
                 transition={{ duration: 0.5 }}
                 className="b1"
               >
-                a Sydney based designer currently enjoying the challenges of
-                problem solving and strategising ways to empower people through
-                design.
+                In my typical process, I combine data, research and empathy to
+                drive design outcomes. Currently, my strengths lie in
+                strategising concepts, to designing intuitive and accessible
+                interfaces.
               </motion.p>
             </div>
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-1">
               <div className="flex items-center gap-4">
                 <motion.h3
                   initial={{ opacity: 0 }}
@@ -73,8 +74,8 @@ const About = () => {
                 className="b1"
                 id="hi"
               >
-                you will usually find me at the gym, reading on psychology or
-                making an iced matcha espresso.
+                You will usually find me at the gym, reading on psychology or
+                making an iced matcha espresso (even in winter)!
               </motion.p>
             </div>
           </div>
@@ -83,9 +84,9 @@ const About = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.5 }}
-            className="hidden md:block min-w-[412px] min-h-[343px]"
+            className="hidden md:block min-w-[244px] min-h-[335px]"
           >
-            <Image src={uiStaticTags}></Image>
+            <Image src={uiStaticTags} width={244} height={335}></Image>
           </motion.div>
           <motion.div
             initial={{ opacity: 0 }}

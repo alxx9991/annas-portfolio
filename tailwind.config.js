@@ -15,33 +15,16 @@ module.exports = {
       ],
       h2: ["3.375rem", { lineHeight: "120%", fontWeight: 500 }],
       subtitle: [
-        "2.25rem",
-        {
-          lineHeight: "140%",
-          fontWeight: 500,
-        },
-      ],
-      subtitle2: [
         "1.75rem",
         {
-          lineHeight: "140%",
+          lineHeight: "200%",
           fontWeight: 500,
-        },
-      ],
-      subtitle3: [
-        "1.375rem",
-        {
-          lineHeight: "120%",
-          fontWeight: 500,
-          letterSpacing: "0.1875rem",
         },
       ],
       b1: ["1.125rem", { lineHeight: "200%" }],
-      b2: ["1rem", { lineHeight: "120%" }],
-      btn: [
-        "1rem",
-        { lineHeight: "140%", fontWeight: 500, letterSpacing: "0.0625rem" },
-      ],
+      b2: ["1rem", { lineHeight: "200%" }],
+      tabs: ["1rem", { lineHeight: "140%", fontWeight: 500 }],
+      caption: ["0.8125rem"],
     },
     colors: {
       primary: "#AFBCFF",

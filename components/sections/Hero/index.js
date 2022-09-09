@@ -12,7 +12,7 @@ const Hero = () => {
     "text-dark-grey relative inline-block after:block after:h-[30%] after:w-[112%] after:bg-primary after:bg-opacity-25 after:absolute after:inset-x-[-6%] after:inset-y-[75%] after:rounded-full after:-z-10";
 
   return (
-    <div className="full-width-section mt-12 2xl:mt-20 text-center">
+    <div className="full-width-section mt-16 2xl:mt-20 text-center">
       <Row ss={1} es={7} sm={1} em={11} el={1} sl={15}>
         <motion.h1
           initial={{ opacity: 0 }}
@@ -24,16 +24,6 @@ const Hero = () => {
           <br />
           a&nbsp;&nbsp;<span className={highlight}>product designer</span>
         </motion.h1>
-      </Row>
-      <Row ss={1} es={7} sm={1} em={11} el={1} sl={15}>
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.3, duration: 0.3 }}
-          className="subtitle3 mt-8 text-text-dark-grey"
-        >
-          a listener first, designer after
-        </motion.p>
       </Row>
       <Row
         ss={1}
@@ -48,7 +38,7 @@ const Hero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.45, duration: 0.3 }}
-          className="w-full max-w-[1100px]"
+          className="w-full max-w-[900px]"
         >
           <Carousel></Carousel>
         </motion.div>

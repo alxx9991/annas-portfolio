@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const Footer = () => {
   return (
     <div
-      className="full-width-section flex flex-col text-white items-center mt-48 pt-8 mx-[-2.2rem] md:m-0 md:mb-4 rounded-t-[3rem]"
+      className="full-width-section flex flex-col text-white items-center mt-24 mx-[-2.2rem] md:m-0 md:mb-4 rounded-t-[3rem]"
       id="contact"
     >
       <motion.div
@@ -17,7 +17,9 @@ const Footer = () => {
         transition={{ duration: 0.5 }}
         className="flex flex-row gap-12 my-8 items-end w-full justify-between"
       >
-        <div className="invisible pl-24">© Anna He, 2022</div>
+        <div className="invisible pl-24">
+          © 2022 Anna He. All rights reserved.
+        </div>
         <div className="flex gap-8 items-center">
           <Dribbble></Dribbble>
           <LinkedIn></LinkedIn>
@@ -32,7 +34,7 @@ const Footer = () => {
           transition={{ duration: 0.5 }}
           className="btn text-text-dark-grey justify-self-end pr-24"
         >
-          © Anna He, 2022
+          © 2022 Anna He. All rights reserved.
         </motion.p>
       </motion.div>
     </div>

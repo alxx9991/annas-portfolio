@@ -35,7 +35,7 @@ const Projects = () => {
     "text-dark-grey relative inline-block after:block after:h-[30%] after:w-[106%] after:bg-primary after:bg-opacity-25 after:absolute after:inset-x-[-3%] after:inset-y-[75%] after:rounded-full after:-z-10";
 
   return (
-    <div className="full-width-section mt-48" id="projects">
+    <div className="full-width-section mt-24" id="projects">
       <Row>
         <h2 className="text-center text-text-dark-grey mb-16">
           <span className={highlight}>Recent Projects</span>

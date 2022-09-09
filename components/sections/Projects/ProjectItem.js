@@ -6,14 +6,14 @@ const ProjectItem = ({ subtitle, description, image, skills, bg }) => {
     return (
       <div
         key={uuidv4()}
-        className="b2 bg-white rounded-full px-4 py-2 lg:px-8 lg:py-4"
+        className="b2 bg-white rounded-full caption px-4 py-2 lg:px-6 lg:py-2"
       >
         {skill}
       </div>
     );
   });
 
-  const styling = `max-w-[500px] h-full ${bg} rounded-[2rem] flex flex-col justify-between`;
+  const styling = `max-w-[432px] h-full ${bg} rounded-[2rem] flex flex-col justify-between`;
 
   return (
     <motion.div
@@ -23,7 +23,7 @@ const ProjectItem = ({ subtitle, description, image, skills, bg }) => {
       transition={{ duration: 0.5 }}
       className={styling}
     >
-      <div className="p-12 pb-4">
+      <div className="p-10 py-4">
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

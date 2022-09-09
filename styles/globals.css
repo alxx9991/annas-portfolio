@@ -31,7 +31,7 @@
     @apply font-general;
     @apply bg-bg;
     @apply text-[#333333];
-    @apply text-[13px] md:text-[14px] 2xl:text-[16px];
+    @apply text-[14px] md:text-[15px] xl:text-[16px];
     font-weight: 400;
     min-height: 100%;
     scroll-behavior: smooth;
@@ -46,7 +46,7 @@
   }
 
   h2 {
-    @apply text-subtitle md:text-h2;
+    @apply text-h2;
   }
 
   .subtitle {
@@ -54,15 +54,15 @@
   }
 
   .subtitle2 {
-    @apply text-subtitle2;
+    @apply text-subtitle;
   }
 
   .subtitle3 {
-    @apply text-subtitle3;
+    @apply text-subtitle;
   }
 
   .btn {
-    @apply text-btn;
+    @apply text-tabs;
   }
 
   .b1 {
@@ -71,6 +71,10 @@
 
   .b2 {
     @apply text-b2;
+  }
+
+  .caption {
+    @apply text-caption;
   }
 }
 
