@@ -84,9 +84,9 @@ const About = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.5 }}
-            className="hidden md:block min-w-[244px] min-h-[335px]"
+            className="hidden md:block min-w-[256px] min-h-[351px]"
           >
-            <Image src={uiStaticTags} width={244} height={335}></Image>
+            <Image src={uiStaticTags} width={256} height={351}></Image>
           </motion.div>
           <motion.div
             initial={{ opacity: 0 }}

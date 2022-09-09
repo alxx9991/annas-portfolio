@@ -9,10 +9,10 @@ import { v4 as uuidv4 } from "uuid";
 
 const Carousel = () => {
   const images = [
-    <Image src={Carousel1} key={uuidv4()} />,
-    <Image src={Carousel2} key={uuidv4()} />,
-    <Image src={Carousel3} key={uuidv4()} />,
-    <Image src={Carousel4} key={uuidv4()} />,
+    <Image src={Carousel1} key={uuidv4()} height={202} width={202} />,
+    <Image src={Carousel2} key={uuidv4()} height={202} width={202} />,
+    <Image src={Carousel3} key={uuidv4()} height={202} width={202} />,
+    <Image src={Carousel4} key={uuidv4()} height={202} width={202} />,
   ];
 
   const CarouselItems = images.map((image) => {
