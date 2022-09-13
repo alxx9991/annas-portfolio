@@ -8,7 +8,7 @@ import { v4 as uuidv4 } from "uuid";
 const Projects = () => {
   const projectInfo = [
     {
-      image: <Image src={iwl}></Image>,
+      image: <Image src={iwl} loading="eager"></Image>,
       name: "Interval Weight Loss",
       subtitle: "Dashboard Redesign",
       skills: ["UX/UI", "Health", "Web App"],
@@ -17,7 +17,7 @@ const Projects = () => {
       bg: "bg-[#D7E7E7]",
     },
     {
-      image: <Image src={alexPortfolio}></Image>,
+      image: <Image src={alexPortfolio} loading="eager"></Image>,
       name: "Alex Lin",
       subtitle: "Portfolio Website",
       skills: ["UX/UI", "Branding"],
