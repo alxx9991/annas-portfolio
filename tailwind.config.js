@@ -10,20 +10,20 @@ module.exports = {
     },
     fontSize: {
       h1: [
-        "clamp(2.25rem, 9.5vw, 5.063rem)",
+        "clamp(2.25rem, 9.5vw, 4.875rem)",
         { lineHeight: "115%", fontWeight: 400 },
       ],
-      h2: ["3.375rem", { lineHeight: "120%", fontWeight: 500 }],
+      h2: ["2.5rem", { lineHeight: "120%", fontWeight: 500 }],
       subtitle: [
-        "1.75rem",
+        "1.375rem",
         {
           lineHeight: "200%",
           fontWeight: 500,
         },
       ],
-      b1: ["1.125rem", { lineHeight: "200%" }],
-      b2: ["1rem", { lineHeight: "200%" }],
-      tabs: ["1rem", { lineHeight: "140%", fontWeight: 500 }],
+      b1: ["1rem", { lineHeight: "200%" }],
+      b2: ["0.875rem", { lineHeight: "200%" }],
+      tabs: ["0.875rem", { lineHeight: "140%", fontWeight: 500 }],
       caption: ["0.8125rem"],
     },
     colors: {
