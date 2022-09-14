@@ -20,7 +20,7 @@ const Projects = () => {
       image: <Image src={alexPortfolio} loading="eager"></Image>,
       name: "Alex Lin",
       subtitle: "Portfolio Website",
-      skills: ["UX/UI", "Branding"],
+      skills: ["Visual Design", "UI Design"],
       description:
         "Website design and branding for a frontend software developer.",
       bg: "bg-[#BAC1D3]",
@@ -41,7 +41,7 @@ const Projects = () => {
           <span className={highlight}>Recent Projects</span>
         </h2>
       </Row>
-      <Row className="flex flex-col items-center xl:items-start xl:flex-row gap-32 xl:gap-16 justify-center mb-24">
+      <Row className="flex flex-col items-center lg:items-start lg:flex-row gap-32 lg:gap-16 justify-center">
         {projects}
       </Row>
     </div>
