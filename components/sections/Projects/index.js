@@ -41,7 +41,7 @@ const Projects = () => {
           <span className={highlight}>Recent Projects</span>
         </h2>
       </Row>
-      <Row className="flex flex-col items-center lg:items-start lg:flex-row gap-32 lg:gap-16 justify-center">
+      <Row className="flex flex-col items-center lg:items-start lg:flex-row gap-8 md:gap-32 lg:gap-16 justify-center">
         {projects}
       </Row>
     </div>
