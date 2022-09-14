@@ -1,7 +1,6 @@
 import { useScrollDirection } from "../../../hooks/useScrollDirection";
 import useScrollPosition from "../../../hooks/useScrollPosition";
 import { motion } from "framer-motion";
-import { useEffect } from "react";
 import Link from "next/link";
 import Icon from "../../../assets/icon-small.png";
 import Image from "next/image";
@@ -28,7 +27,11 @@ const Header = () => {
       transition={{ duration: 0.2 }}
     >
       <div className="flex justify-center items-center px-16 py-4">
-        <Image src={Icon}></Image>
+        <Link href="https://www.annahe.xyz/">
+          <a>
+            <Image src={Icon} height={29} width={32}></Image>
+          </a>
+        </Link>
       </div>
       <motion.nav
         initial={{ opacity: 0 }}
