@@ -29,7 +29,7 @@ const About = () => {
         em={10}
         sl={2}
         el={14}
-        className="content-box md:px-20 py-8 rounded-[2rem] bg-grey text-dark-grey max-w-[928px]"
+        className="content-box md:px-20 py-8 rounded-[2rem] bg-grey text-dark-grey max-w-[928px] m-auto"
       >
         <div className="flex flex-col items-center gap-8 md:flex-row justify-between">
           <div className="flex flex-col gap-8">
