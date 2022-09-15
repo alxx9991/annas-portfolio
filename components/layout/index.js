@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import LoadIcon from "../../assets/icon.png";
+import LoadingLogo from "../../assets/loading-logo.svg";
 
 const Layout = ({ children }) => {
   const [isLoading, setIsLoading] = useState(true);
@@ -22,7 +23,7 @@ const Layout = ({ children }) => {
             }}
             transition={{ duration: 3 }}
           >
-            <Image src={LoadIcon}></Image>
+            <LoadingLogo></LoadingLogo>
           </motion.h2>
         </div>
       ) : (

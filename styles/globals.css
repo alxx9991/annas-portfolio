@@ -46,7 +46,7 @@
   }
 
   h2 {
-    @apply text-h2;
+    @apply text-subtitle md:text-h2;
   }
 
   .subtitle {

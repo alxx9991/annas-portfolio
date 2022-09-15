@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import Link from "next/link";
 import Icon from "../../../assets/icon-small.png";
 import Image from "next/image";
+import HeaderLogo from "../../../assets/header-logo.svg";
 
 const Header = () => {
   const scrollDir = useScrollDirection();
@@ -18,7 +19,7 @@ const Header = () => {
   return (
     <>
       <div className="full-width-section flex pt-6 pb-8 md:hidden">
-        <Image src={Icon}></Image>
+        <HeaderLogo></HeaderLogo>
       </div>
       <motion.div
         className={headerClasses}
@@ -32,7 +33,7 @@ const Header = () => {
         transition={{ duration: 0.2 }}
       >
         <div className="flex justify-center items-center px-16 py-4">
-          <Image src={Icon}></Image>
+          <HeaderLogo></HeaderLogo>
         </div>
         <motion.nav
           initial={{ opacity: 0 }}
