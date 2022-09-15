@@ -57,7 +57,7 @@ const Hero = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.45, duration: 0.3 }}
         >
-          <Image src={MobileCarousel}></Image>
+          <Image src={MobileCarousel} height={302} width={302}></Image>
         </motion.div>
       </Row>
     </div>
