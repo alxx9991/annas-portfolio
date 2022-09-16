@@ -97,7 +97,7 @@ const About = () => {
             transition={{ duration: 0.5 }}
             className="md:hidden"
           >
-            <Image src={mobileUiStaticTags}></Image>
+            <Image src={mobileUiStaticTags} height={212} width={250}></Image>
           </motion.div>
         </div>
       </Row>

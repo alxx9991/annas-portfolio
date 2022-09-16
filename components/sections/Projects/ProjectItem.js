@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import ProjectLink from "../../../assets/projectLink.svg";
 import Link from "next/link";
 
-const ProjectItem = ({ subtitle, description, image, skills, bg }) => {
+const ProjectItem = ({ subtitle, description, image, skills, bg, link }) => {
   const skillElements = skills.map((skill) => {
     return (
       <div
@@ -18,7 +18,7 @@ const ProjectItem = ({ subtitle, description, image, skills, bg }) => {
   const styling = `max-w-[432px] h-full ${bg} rounded-[2rem] flex flex-col justify-between relative`;
 
   return (
-    <Link href="https://google.com.au">
+    <Link href={link ? link : "https://google.com.au"}>
       <a>
         <motion.div
           initial={{ opacity: 0 }}

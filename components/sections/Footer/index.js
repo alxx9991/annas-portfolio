@@ -42,7 +42,7 @@ const Footer = () => {
             </Link>
           </motion.div>
           <motion.div whileHover={{ y: -2 }}>
-            <Link href="https://twitter.com/motivadead">
+            <Link href="https://twitter.com/aannaahe">
               <a>
                 <Twitter></Twitter>
               </a>

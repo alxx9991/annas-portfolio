@@ -24,6 +24,7 @@ const Projects = () => {
       description:
         "Website design and branding for a frontend software developer.",
       bg: "bg-[#BAC1D3]",
+      link: "https://www.behance.net/gallery/152737259/Portfolio-Design-Case-Study",
     },
   ];
 
