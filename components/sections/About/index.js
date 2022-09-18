@@ -38,7 +38,7 @@ const About = () => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: 0.5 }}
+                transition={{ delay: 0.2, duration: 0.5 }}
                 className="subtitle2"
               >
                 A listener first, designer after
@@ -47,7 +47,7 @@ const About = () => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: 0.5 }}
+                transition={{ delay: 0.2, duration: 0.5 }}
                 className="b1"
               >
                 In my typical process, I combine data, research and empathy to
@@ -62,7 +62,7 @@ const About = () => {
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true, amount: 0.2 }}
-                  transition={{ duration: 0.5 }}
+                  transition={{ delay: 0.2, duration: 0.5 }}
                   className="subtitle2"
                 >
                   Outside of design
@@ -72,7 +72,7 @@ const About = () => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: 0.5 }}
+                transition={{ delay: 0.2, duration: 0.5 }}
                 className="b1"
                 id="hi"
               >
@@ -85,7 +85,7 @@ const About = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.5 }}
+            transition={{ delay: 0.2, duration: 0.5 }}
             className="hidden md:block min-w-[256px] min-h-[351px]"
           >
             <Image src={uiStaticTags} width={256} height={351}></Image>
@@ -94,7 +94,7 @@ const About = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.5 }}
+            transition={{ delay: 0.2, duration: 0.5 }}
             className="md:hidden"
           >
             <Image src={mobileUiStaticTags} height={212} width={250}></Image>

@@ -15,7 +15,7 @@ const Footer = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.5 }}
+        transition={{ delay: 0.2, duration: 0.5 }}
         className="flex flex-col md:flex-row gap-4 md:gap-12 my-8 md:items-end w-full items-center md:justify-between"
       >
         <div className="hidden md:block md:invisible pl-24">© 2022 Anna He</div>
@@ -53,7 +53,7 @@ const Footer = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 0.5 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
           className="btn text-text-dark-grey justify-self-end md:pr-24"
         >
           © 2022 Anna He

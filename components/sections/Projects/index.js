@@ -15,6 +15,7 @@ const Projects = () => {
       description:
         "Redesigning the interface for Australia’s only scentifically developed weight-loss program.",
       bg: "bg-[#D7E7E7]",
+      link: "",
     },
     {
       image: <Image src={alexPortfolio} loading="eager"></Image>,

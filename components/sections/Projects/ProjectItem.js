@@ -22,8 +22,11 @@ const ProjectItem = ({ subtitle, description, image, skills, bg, link }) => {
       <a>
         <motion.div
           initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1, transition: { duration: 0.5 } }}
-          viewport={{ once: true, amount: 0.2 }}
+          whileInView={{
+            opacity: 1,
+            transition: { delay: 0.2, duration: 0.5 },
+          }}
+          viewport={{ once: true }}
           className={styling}
           whileHover={{ y: -5 }}
         >
@@ -35,14 +38,14 @@ const ProjectItem = ({ subtitle, description, image, skills, bg, link }) => {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.5 }}
+              transition={{ delay: 0.4, duration: 0.5 }}
               className="btn mt-4"
             ></motion.p>
             <motion.h3
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.5 }}
+              transition={{ delay: 0.4, duration: 0.5 }}
               className="subtitle2"
             >
               {subtitle}
@@ -51,7 +54,7 @@ const ProjectItem = ({ subtitle, description, image, skills, bg, link }) => {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.5 }}
+              transition={{ delay: 0.4, duration: 0.5 }}
               className="flex flex-row gap-4 my-4"
             >
               {skillElements}
@@ -60,7 +63,7 @@ const ProjectItem = ({ subtitle, description, image, skills, bg, link }) => {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.5 }}
+              transition={{ delay: 0.4, duration: 0.5 }}
               className="b1"
             >
               {description}
